@@ -1,0 +1,212 @@
+@font-face {font-family: ProximaNova; src: url('../font/ProximaNova/ProximaNova-Regular.otf');}
+@font-face {font-family: ProximaNova; src: url('../font/ProximaNova/ProximaNova-Light.otf'); font-weight: 200;}
+@font-face {font-family: ProximaNova; src: url('../font/ProximaNova/ProximaNova-Semibold.otf'); font-weight: 400;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ProximaNova;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  background-image: url('../img/header-image.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  color: #fff;
+}
+
+nav {
+  text-align: center;
+  width: 755px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 25px 0;
+}
+
+option {
+  font-weight: 300;
+}
+
+select.options {
+  padding: 8px 0;
+}
+
+#user-info {
+  margin-top: 25px;
+}
+
+.top-bar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 100%;
+}
+
+.contact {
+  text-align: center;
+}
+
+.phone-number {
+  font-size: 30px;
+  font-weight: 300;
+  margin-right: 15px;
+}
+
+.request-chat {
+  background-color: #C89674;
+  border: 1px solid #ccc;
+  width: 211px;
+}
+
+.btn-top {
+  font-weight: 200;
+}
+
+.btn-bottom {
+  border-top: 2px solid #ccc;
+  line-height: 20px;
+}
+
+.banner-container {
+  padding: 200px 0 50px 0;
+}
+
+.banner {
+  background-color: rgba(25, 25, 25, .4);
+  padding: 20px 0;
+}
+
+.banner p {
+  font-weight: 200;
+  width: 42%;
+  margin: 0 auto;
+}
+
+.main {
+  min-width: 785px;
+  width: 43%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main p {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 25px;
+}
+
+.main .page-container p {
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.page-container {
+  color: #ccc;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.on-page {
+  color: #000;
+}
+
+.on-page .page-number {
+  border: 2px solid #000;
+}
+
+.page-number {
+  width: 52px;
+  font-size: 28px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.title {
+  margin-top: 35px;
+}
+
+.title h2 {
+  font-size: 30px;
+}
+
+.title p {
+  font-size: 18px;
+}
+
+.options {
+  width: 75%;
+  padding: 5px 0;
+  font-weight: 300;
+}
+
+.birthday {
+  width: 375px;
+  margin: 0 auto;
+}
+
+.birthday input {
+  font-weight: 200;
+  padding: 5px 0 5px 5px;
+}
+
+.month, .day {
+  margin-right: 10px;
+}
+
+.income-factor, .height-factor {
+  display: inline-block;
+  padding: 6px 35px;
+  font-weight: 200;
+  background-color: #BCBEC0;
+}
+
+.selected {
+  background-color: #00B9D7;
+}
+
+.no {
+  margin-left: -5px;
+}
+
+.factor {
+  margin-top: 30px;
+}
+.factor p {
+  margin-top: 10px;
+}
+
+.submit-btn {
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 7px 25px;
+  background-color: #00B9D7;
+  color: #fff;
+  cursor: pointer;
+  margin: 25px 0 50px;
+}
