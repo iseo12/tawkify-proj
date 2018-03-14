@@ -32,5 +32,4 @@ $(document).ready(function(){
     event.preventDefault();
     $('.income-factor').toggleClass('selected');
   });
-}
 });
