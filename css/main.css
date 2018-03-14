@@ -90,6 +90,15 @@ select.options {
   line-height: 20px;
 }
 
+.navbar-toggle {
+  margin-left: 55%;
+}
+
+.navbar-toggler-icon {
+  background: url('../img/dropdown.png');
+  background-size: cover;
+}
+
 .navbar-header, .mobile-logo {
   display: none;
 }
@@ -251,13 +260,13 @@ select.options {
 }
 
 @media only screen and (max-width: 768px) {
-  .desktop-logo, .nav-item, .contact {display: none;}
+  .desktop-logo, .nav-item {display: none;}
   .mobile-logo {display: inline-block;}
   .banner p {width: 100%;}
   .navbar-header {display: block;}
-
 }
 @media only screen and (max-width: 992px) {
+  .contact {display: none;}
   .banner p {width: 90%;}
   .main {width: 100%;}
   .birthday input {margin-bottom: 15px;}
