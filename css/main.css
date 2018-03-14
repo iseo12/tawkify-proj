@@ -54,10 +54,15 @@ select.options {
   background-color: #000;
   color: #fff;
   padding: 10px 0;
+  margin: 0;
 }
 
 .logo {
   width: 100%;
+}
+
+.item-1 {
+  min-width: 130px;
 }
 
 .contact {
@@ -85,6 +90,22 @@ select.options {
   line-height: 20px;
 }
 
+.navbar-header, .mobile-logo {
+  display: none;
+}
+
+.navbar-nav li {
+  margin-top: 25px;
+}
+
+.navbar-nav li:last-child {
+  margin-bottom: 25px;
+}
+
+.mobile-logo {
+  width: 160px;
+}
+
 .banner-container {
   padding: 200px 0 50px 0;
 }
@@ -101,7 +122,7 @@ select.options {
 }
 
 .main {
-  min-width: 785px;
+  max-width: 785px;
   width: 43%;
   margin: 0 auto;
   text-align: center;
@@ -116,6 +137,20 @@ select.options {
   font-size: 14px;
   font-weight: 200;
   margin-bottom: 25px;
+}
+
+.main-top {
+  position: relative;
+}
+
+.center-line {
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background-color: #ccc;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main .page-container p {
@@ -144,6 +179,7 @@ select.options {
   border: 2px solid #ccc;
   border-radius: 50%;
   padding: 3px;
+  background-color: #fff;
 }
 
 .title {
@@ -165,7 +201,7 @@ select.options {
 }
 
 .birthday {
-  width: 375px;
+  max-width: 235px;
   margin: 0 auto;
 }
 
@@ -200,13 +236,29 @@ select.options {
   margin-top: 10px;
 }
 
+.submit-container {
+  margin: 25px 0 50px;
+}
+
 .submit-btn {
   border: none;
   font-size: 20px;
   font-weight: 400;
-  padding: 7px 25px;
+  padding: 12px 25px;
   background-color: #00B9D7;
   color: #fff;
   cursor: pointer;
-  margin: 25px 0 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop-logo, .nav-item, .contact {display: none;}
+  .mobile-logo {display: inline-block;}
+  .banner p {width: 100%;}
+  .navbar-header {display: block;}
+
+}
+@media only screen and (max-width: 992px) {
+  .banner p {width: 90%;}
+  .main {width: 100%;}
+  .birthday input {margin-bottom: 15px;}
 }

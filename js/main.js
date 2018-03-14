@@ -33,13 +33,18 @@ $(document).ready(function(){
     $('.income-factor').toggleClass('selected');
   });
 
-  var imageLoader = $('#photo');
-  imageLoader.addEventListener('change', handleImage, false);
-  function handleImage(e) {
-    var reader = new FileReader();
-    reader.onload = function (event) {
-      $('.drag-drop img').attr('src',event.target.result);
+  function readUrl(input) {
+
+  if (input.files && input.files[0]) {
+    let reader = new FileReader();
+    reader.onload = (e) => {
+      let imgData = e.target.result;
+      let imgName = input.files[0].name;
+      input.setAttribute("data-title", imgName);
+      console.log(e.target.result);
     }
-    reader.readAsDataURL(e.target.files[0]);
+    reader.readAsDataURL(input.files[0]);
   }
+
+}
 });

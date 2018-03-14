@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tawkify Interface</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <?php include 'header.php'; ?>
+<?php include 'header.php'; ?>
     <section class="main">
-      <div class="row">
+      <div class="row main-top">
+        <div class="center-line"></div>
         <div class="page-container on-page col-4">
           <div class="page-number">1</div>
           <p>ABOUT YOURSELF</p>
@@ -30,7 +21,7 @@
       </div>
       <form id="user-info" action="test.php" method="post">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6">
             <h2>YOUR GENDER</h2>
             <select class="options" name="gender">
               <option value="male">Male</option>
@@ -38,7 +29,7 @@
             </select>
             <p>Select your gender.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6">
             <h2>YOU ARE SEEKING</h2>
             <select class="options" name="seeking">
               <option value="men">Men</option>
@@ -48,22 +39,22 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6">
             <h2>LOCATION</h2>
             <input type="text" class="options" name="location" value="" maxlength="5">
             <p>Where are you located?</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6">
             <h2>YOUR BIRTHDAY</h2>
-            <div class="row justify-content-center birthday">
-              <input type="text" class="month col-2" name="month" value="" placeholder="MM" maxlength="2">
-              <input type="text" class="day col-2" name="day" value="" placeholder="DD" maxlength="2">
-              <input type="text" class="year col-3" name="year" value="" placeholder="YYYY" maxlength="4">
+            <div class="container-fluid row justify-content-center birthday">
+              <input type="text" class="month col-3" name="month" value="" placeholder="MM" maxlength="2">
+              <input type="text" class="day col-3" name="day" value="" placeholder="DD" maxlength="2">
+              <input type="text" class="year col-4" name="year" value="" placeholder="YYYY" maxlength="4">
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6">
             <h2>YOUR HEIGHT</h2>
             <select class="options" name="height">
               <option value="5">5 ft</option>
@@ -74,19 +65,19 @@
             </select>
             <p>What is your height?</p>
           </div>
-          <div class="col-md-6 factor">
+          <div class="col-sm-12 col-md-6 factor">
             <a href="#" class="height-factor" data-value="yes">Yes</a>
             <a href="#" class="height-factor selected no" data-value="no">No</a>
             <p>Is height a factor in your match preferences?</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6">
             <h2>OCCUPATION</h2>
             <textarea class="options" name="occupation" rows="1" cols="10"></textarea>
             <p>What do you do?</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6">
             <h2>INCOME</h2>
             <select class="options" name="income">
               <option value="Less than $40,000">Less than $40,000</option>
@@ -104,21 +95,24 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 factor">
+          <div class="col-sm-12 col-md-6 factor">
             <a href="#" class="income-factor" data-value="yes">Yes</a>
             <a href="#" class="income-factor selected no" data-value="no">No</a>
             <p>Is income a factor in your match preferences?</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6">
             <h2>INTERESTS</h2>
             <textarea class="options" name="interests" rows="1" cols="10"></textarea>
             <p>Tell us a little more about yourself and what you like to do. We read everything, so please share!</p>
           </div>
         </div>
-        <button type="submit" class="submit-btn" name="submit-btn">SAVE AND CONTINUE</button>
+        <div class="submit-container">
+          <a href="photos.php" class="submit-btn" name="submit-btn">SAVE AND CONTINUE</a>
+        </div>
       </form>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
